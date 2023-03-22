@@ -1,10 +1,10 @@
 #include <time.h>
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <string.h>
 int extraMemoryAllocated;
 
-vvoid mergeSort(int pData[], int l, int r) {
+void mergeSort(int pData[], int l, int r) {
     if (l <r) {
         
         int o = (l + (r - l)) / (2);
@@ -64,7 +64,9 @@ void insertionSort(int* pData, int n) {
         a =pData[i];
         j =i - 1;
 
-        while ((j >=0) && (pData[j] >a)) 
+    
+
+        while ((j >=0) && (pData[j] >a)) {
         
             pData[j + 1] =pData[j];
             j=j - 1;
@@ -125,7 +127,7 @@ void selectionSort(int* pData, int n) {
             
         }
 
-        if (minIndex !=i) {
+        if (b !=i) {
             
             int c = a[i];
             a[i] = a[b];
