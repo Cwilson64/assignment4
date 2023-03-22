@@ -4,7 +4,7 @@
 #include <string.h>
 int extraMemoryAllocated;
 
-void mergeSort(int pData[], int l, int r) {
+ void mergeSort(int pData[], int l, int r) {
     if (l <r) {
         
         int o = (l + (r - l)) / (2);
@@ -52,6 +52,7 @@ void mergeSort(int pData[], int l, int r) {
     }
     
 }
+
     
 void insertionSort(int* pData, int n) {
     
